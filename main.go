@@ -7,6 +7,7 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"os"
 )
 
 var (
@@ -26,7 +27,7 @@ func main() {
 	e.POST("/api", SupportHandler)
 	//e.POST("/api/2", SupportHandler)
 
-	if err := e.Start(":8080"); err != nil {
+	if err := e.Start(":" + os.Getenv("PORT")); err != nil {
 		log.Fatal(err)
 	}
 }
