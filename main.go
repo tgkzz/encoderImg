@@ -77,5 +77,9 @@ func SupportHandler(c echo.Context) error {
 
 	encodeImg := base64.StdEncoding.EncodeToString(d)
 
-	return c.JSON(http.StatusOK, encodeImg)
+	return c.JSON(http.StatusOK, struct {
+		Base64 string `json:"base64,omitempty"`
+	}{
+		Base64: encodeImg,
+	})
 }
