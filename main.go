@@ -132,11 +132,11 @@ func SupportHandler(c echo.Context) error {
 	}
 
 	return c.JSON(http.StatusOK, struct {
-		Url    string `json:"url,omitempty"`
-		Base64 string `json:"base64,omitempty" json:"base64,omitempty"`
+		Url string `json:"url,omitempty"`
+		//Base64 string `json:"base64,omitempty" json:"base64,omitempty"`
 	}{
-		Url:    rr.Url,
-		Base64: encodeImg,
+		Url: rr.Url,
+		//Base64: encodeImg,
 	})
 }
 
