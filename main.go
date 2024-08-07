@@ -15,7 +15,7 @@ import (
 
 var (
 	url    = "https://base64.guru/converter/encode/url"
-	auth   = "Bearer key-2q3QDOy9GvwEmolkJp7OtTiiXOXDXwebzbDidj0cBJoU6MurfyeoB6XGSg7GDzi0hEGHjQJlLG9iMMOlHpe1W8iitQ8xNMal"
+	auth   = "Bearer key-2srPk0uOtQVZdzjAFw3c9rhyaUhzHHbZ4CRsWJHKDvcZnmabUCFNerZrROOft7c9j6yT6UfHUENmxi4cas9gDe8pogoozxA4"
 	apiUrl = "https://api.getimg.ai/v1/stable-diffusion-xl/image-to-image"
 )
 
